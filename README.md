@@ -21,3 +21,6 @@ Docker attach: `docker attach nwabap751`
 Start SAP:
 * `su npladm`
 * `startsap`
+
+Copy files into container:
+`docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
