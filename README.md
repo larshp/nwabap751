@@ -35,10 +35,10 @@ In my example "Virtualbox" needs to be installed on the machine as a preconditio
 
 Use this command to create a virtual machine where Docker engine will be spin up inside:
 
-`docker-machine create -d "virtualbox" --virtualbox-cpu-count "2" --virtualbox-disk-size "150000" --virtualbox-memory "6500" abap´
+`docker-machine create -d "virtualbox" --virtualbox-cpu-count "2" --virtualbox-disk-size "150000" --virtualbox-memory "6500" abap`
 
 after success execution you have now a virtual machine (this works also fine for AWS EC2, btw) with 150 GB disk space and 6.5 GB RAM. If you still run into issues you might have to change the file driver.
 
-Use `docker-machine ls`to find the available virtual machines. Use `docker-machine ip abap to find out the IP address of your virtual host.
+Use `docker-machine ls`to find the available virtual machines. Use `docker-machine ip abap` to find out the IP address of your virtual host.
 
 Follow the instructions on the screen to connect to it.
