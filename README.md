@@ -25,6 +25,8 @@ Start SAP:
 Copy files into container:
 `docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
 
+Setup Docker for at least 4 GB of RAM
+
 ## Additional remarks when facing issues with file sizes
 
 If you are using Docker Community Edition on OS X10.x you could run in physical volume size limitations, especially when you are a more frequent Docker user.
