@@ -4,7 +4,7 @@ RUN echo $'#!/bin/bash \n\
 echo "Free space - initial:" \n\
 df -h \n\
 mkdir /tmp/sap_netweaver_as_abap_751_sp02_ase_dev_edition \n\
-unrar x /tmp/sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar /tmp/sap_netweaver_as_abap_751_sp02_ase_dev_edition \n\
+unrar x /tmp/sap_netweaver_as_abap_751_sp02_ase_dev_edition*part01.rar /tmp/sap_netweaver_as_abap_751_sp02_ase_dev_edition \n\
 echo "Free space - after extraction" \n\
 df -h \n\
 rm /tmp/*.rar \n\
