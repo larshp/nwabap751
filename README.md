@@ -1,6 +1,8 @@
 # nwabap751
 Dockerfile for ABAP Developer Edition 7.51 SP02
 
+Download via https://tools.hana.ondemand.com/#abap
+
 Based on https://bitbucket.org/gregorwolf/dockernwabap750
 
 ## Installation
