@@ -22,7 +22,7 @@ attach and run
 License key: https://go.support.sap.com/minisap/
 
 Optional:
-* note 510007, https://github.com/larshp/abapGit/issues/1230
+* note 510007, https://github.com/larshp/abapGit/issues/1225
 * ASE license, https://twitter.com/JuliePlummer20/status/976788536950222848
 
 ## Notes
