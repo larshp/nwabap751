@@ -34,10 +34,7 @@ Start SAP:
 * `su npladm`
 * `startsap`
 
-Copy files into container:
-`docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
-
-Setup Docker for at least 4 GB of RAM
+Setup Docker for at least 3.5 GB of RAM and 80 GB of disk space.
 
 ## Additional remarks when facing issues with file sizes
 
