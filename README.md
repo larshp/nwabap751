@@ -36,6 +36,9 @@ Start SAP:
 * `su npladm`
 * `startsap`
 
+Stop SAP:
+* `stopsap`
+
 Setup Docker for at least 3.5 GB of RAM and 80 GB of disk space.
 
 ## Additional remarks when facing issues with file sizes
