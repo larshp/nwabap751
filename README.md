@@ -7,15 +7,14 @@ Based on https://bitbucket.org/gregorwolf/dockernwabap750
 
 ## Installation
 
+Create folder 'sapdownloads' and copy all .rar installation files to this.
+
+Start command prompt and navigate to project root folder.
+Execute commands:
+
 `docker build -t nwabap751 .`
 
 `docker run -p 8000:8000 -p 44300:44300 -p 3300:3300 -p 3200:3200 -h vhcalnplci --name nwabap751 -it nwabap751 /bin/bash`
-
-detach
-
-copy all the rar files into container `docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
-
-attach and run
 
 `/tmp/install.sh`
 
