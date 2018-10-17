@@ -1,5 +1,7 @@
 FROM opensuse:latest
 RUN zypper --non-interactive install --replacefiles uuidd hostname wget unrar tcsh tar which net-tools iproute2
+RUN mkdir /run/uuidd && chown uuidd /var/run/uuidd && /usr/sbin/uuidd
+COPY sapdownloads /tmp
 RUN echo $'#!/bin/bash \n\
 echo "Free space - initial:" \n\
 df -h \n\
