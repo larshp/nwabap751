@@ -10,6 +10,7 @@ Based on https://bitbucket.org/gregorwolf/dockernwabap750
 Create folder 'sapdownloads' and copy all .rar installation files to this.
 
 Start command prompt and navigate to project root folder.
+
 Execute commands:
 
 `docker build -t nwabap751 .`
