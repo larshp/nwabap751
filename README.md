@@ -3,19 +3,21 @@ Dockerfile for ABAP Developer Edition 7.51 SP02
 
 Download via https://tools.hana.ondemand.com/#abap
 
-Based on https://bitbucket.org/gregorwolf/dockernwabap750
+Based on https://bitbucket.org/gregorwolf/dockernwabap750 
+
+Inspired by https://github.com/nzamani/sap-nw-abap-trial-docker
 
 ## Installation
+
+Create folder 'sapdownloads' and copy all .rar installation files to this.
+
+Start command prompt and navigate to project root folder.
+
+Execute commands:
 
 `docker build -t nwabap751 .`
 
 `docker run -p 8000:8000 -p 44300:44300 -p 3300:3300 -p 3200:3200 -h vhcalnplci --name nwabap751 -it nwabap751 /bin/bash`
-
-detach
-
-copy all the rar files into container `docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
-
-attach and run
 
 `/tmp/install.sh`
 
@@ -34,10 +36,10 @@ Start SAP:
 * `su npladm`
 * `startsap`
 
-Copy files into container:
-`docker cp .\sap_netweaver_as_abap_751_sp02_ase_dev_edition.part01.rar nwabap751:/tmp/`
+Stop SAP:
+* `stopsap`
 
-Setup Docker for at least 4 GB of RAM
+Setup Docker for at least 3.5 GB of RAM and 80 GB of disk space.
 
 ## Additional remarks when facing issues with file sizes
 
